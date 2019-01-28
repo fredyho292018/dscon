@@ -19,7 +19,12 @@ export class ServicesComponent implements OnInit {
    this._activatedRoute.params.subscribe(parans => {
      console.log(parans['clasificacion']);
      this.clasificacion = parans['clasificacion'];
-     this.listaServes = this._serveconsergueService.getDsListaClasificacion(parans['clasificacion']);
+     if (this.clasificacion == 'Services' || this.clasificacion == 'Packs' || this.clasificacion == 'Team') {
+         this.listaServes = this._serveconsergueService.getDsListaClasificacion(parans['clasificacion']);
+     } else {
+      // --Page not found
+      this.ro.navigate([this.clasificacion]);
+     }
    });
   }
 

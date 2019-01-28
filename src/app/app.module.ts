@@ -9,6 +9,7 @@ import { ServiceComponent } from './components/service/service.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ServiceComponent,
     HomeComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

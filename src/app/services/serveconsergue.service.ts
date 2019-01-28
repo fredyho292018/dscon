@@ -38,7 +38,8 @@ export class ServeconsergueService {
       nombre: 'Daniela Stranska',
       telfonos: this.telefonoContactos,
       imagen: './../../../assets/images/dsimg/ds_opt.jpg',
-      email: 'daniela@dsconciergemallorca.com'
+      email: 'daniela@dsconciergemallorca.com',
+      direccion: 'Carrer Forn d en Vila, 3, 07002 Palma de Mallorca (Islas Baleares), España, 07002 Palma de Mallorca, Islas Baleares'
     };
   private clasifi: ClasificacionI[] = [
     {
@@ -52,7 +53,7 @@ export class ServeconsergueService {
       id: 2
     },
     {
-      clasificacion: 'Services',
+      clasificacion: 'Team',
       titulo: 'Mallorca DS Concierge Free Time Services',
       id: 3
     },
@@ -267,5 +268,6 @@ export interface ContactoI {
     telfonos: string[];
     imagen: string;
     email: string;
+    direccion: string;
 }
 
