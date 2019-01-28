@@ -1,0 +1,88 @@
+<section id="content">
+    <div class="container">
+        <div class="row">
+
+            <div class="span8">
+
+                <article class="single">
+                    <div class="row">
+
+                        <div class="span8">
+                            <div class="post-image">
+                                <div class="post-heading">
+                                    <h3><a href="#">{{servicioT.titulo}}</a></h3>
+                                </div>
+                                <img [src]="servicioT.imagen[0]" alt="" />
+                            </div>
+                            <div class="meta-post">
+                                <a href="#" class="author">By<br /> {{servicioT.firma}}</a>
+                                <a href="#" class="date">10 Jun<br /> 2013</a>
+                            </div>
+                            <p>
+                                {{servicioT.descripcion}}
+                            </p>
+                            <blockquote>
+                                {{servicioT.clasificacion.titulo}}
+                            </blockquote>
+
+
+
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- author info -->
+                <div class="about-author">
+                    <a href="#" class="thumbnail align-left"><img [src]="servicioT.imagen[0]" alt="" /></a>
+                    <h5><strong><a href="#">{{servicioT.tituloActividades}}</a></strong></h5>
+                    <p *ngFor="let act of servicioT.actividades">
+                        {{act}}
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="span4">
+
+                <aside class="right-sidebar">
+                    <h4>Leave your comment</h4>
+                    <form id="commentform" action="#" method="post" name="comment-form">
+                        <div class="row">
+                            <div class="span4">
+                                <input type="text" placeholder="* Enter your full name" />
+                            </div>
+                            <div class="span4">
+                                <input type="text" placeholder="* Enter your email address" />
+                            </div>
+                            <div class="span4 margintop10">
+                                <input type="text" placeholder="Enter your website" />
+                            </div>
+                            <div class="span4 margintop10">
+                                <p>
+                                    <textarea rows="12" class="input-block-level" placeholder="*Your comment here"></textarea>
+                                </p>
+                                <p>
+                                    <button class="btn btn-color margintop10" type="submit">Submit comment</button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div *ngFor="let vid of servicioT.video">
+                        <video width="320" height="240" controls *ngIf="vid">
+                                   
+                                    <source width="320" height="240" [src]="vid" type="video/mp4" >
+                                    Tu navegador no implementa el elemento <code>video</code>.
+                                  </video>
+
+
+                    </div>
+
+                </aside>
+            </div>
+
+
+        </div>
+    </div>
+</section>
