@@ -1,0 +1,47 @@
+{
+    "hola": "Hello work",
+    "header": {
+        "Home": "Home",
+        "Services": "Services",
+        "Packs": "Packs",
+        "Team": "Team",
+        "Contact": "Contact",
+        "Remember": "Remember",
+        "Language": "Language"
+    },
+    "home": {
+        "Welcome to Remember": "Welcome to Remember",
+        "Personal Assistant in Mallorca": "Personal Assistant in Mallorca",
+        "Get Started": "Get Started",
+        "titulo1": "Mallorca DS Concierge Free Time Services",
+        "titulo2": "Mallorca DS Concierge Family Services",
+        "titulo3": "Special price in very <span>limited</span> times",
+        "titulo4": "Call Action"
+    },
+    "footer": {
+        "titulo1": "Browse pages",
+        "titulo2": "Other Service",
+        "titulo3": "Contact form"
+    },
+
+    "Personal Assistant in Mallorca": "Personal Assistant in Mallorca",
+    "Contact": "Contact",
+    "Team": "Team",
+    "Services": "Services",
+    "Packs": "Packs",
+    "Privacy Policy": "Privacy Policy",
+    "Terms & Conditions": "Terms & Conditions",
+    "Cookies Policy": "Cookies Policy",
+
+    "Maintenance Boat Services": "Maintenance Boat Services",
+    "Babysitter Services": "Babysitter Services",
+    "Maintenance House Services": "Maintenance House Services",
+    "Waiters Services": "Waiters Services",
+    "Catering Organization Services at Home and Boats": "Catering Organization Services at Home and Boats",
+    "Restaurant Services": "Restaurant Services",
+    "Relax & Spa Pack": "Relax & Spa Pack",
+    "Sport Pack": "Sport Pack",
+    "Fun Pack": "Fun Pack",
+    "Sorry requested page not found": "Sorry requested page not found",
+    "Please select the desired option in the menu": "Please select the desired option in the menu"
+}

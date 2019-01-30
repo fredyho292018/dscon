@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     { path: 'services/:clasificacion', component: ServicesComponent },
     { path: 'service/:id', component: ServiceComponent },
     { path: 'contact', component: ContactComponent },
-    { path: '**', component: HomeComponent },
+    { path: '**', component: PagenotfoundComponent },
     { path: '', component: HomeComponent },
     // { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

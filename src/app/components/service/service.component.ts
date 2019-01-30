@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServeconsergueService, ClasificacionI, ServeI } from 'src/app/services/serveconsergue.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -12,7 +13,9 @@ export class ServiceComponent implements OnInit {
 
    // servicioP: ServeI[] = [];
    servicioT: ServeI = null;
-   constructor(private _activatedRoute: ActivatedRoute, private serv: ServeconsergueService, private rou: Router) {
+   constructor(private _activatedRoute: ActivatedRoute,
+     private serv: ServeconsergueService, private rou: Router,
+     public translate: TranslateService) {
      this._activatedRoute.params.subscribe(parans => {
        console.log(parans['id']);
        // this.servicioP = serv.getDsLista();

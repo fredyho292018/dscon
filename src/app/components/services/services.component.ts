@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ServeconsergueService, ClasificacionI, ServeI } from 'src/app/services/serveconsergue.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-services',
@@ -10,7 +11,9 @@ import { ServeconsergueService, ClasificacionI, ServeI } from 'src/app/services/
 export class ServicesComponent implements OnInit {
   listaServes: ServeI[] = [];
   clasificacion: string = null;
-  constructor(private _activatedRoute: ActivatedRoute, private _serveconsergueService: ServeconsergueService, private ro: Router ) {
+  constructor(private _activatedRoute: ActivatedRoute,
+     private _serveconsergueService: ServeconsergueService,
+      private ro: Router, public translate: TranslateService ) {
  }
  verServicio( i: number) {
    this.ro.navigate(['/servicio', i]);

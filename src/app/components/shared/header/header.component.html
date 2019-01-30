@@ -30,7 +30,7 @@
         <div class="row nomargin">
             <div class="span4">
                 <div class="logo">
-                    <h1><a href="index.html"><i class="icon-tint"></i> Remember</a></h1>
+                    <h1><a href="index.html"><i class="icon-tint"></i>{{ 'header.Remember' | translate }} </a></h1>
                 </div>
             </div>
             <div class="span8">
@@ -39,22 +39,40 @@
                         <nav>
                             <ul class="nav topnav">
                                 <li class="active">
-                                    <a [routerLink]="['/home']">Home</a>
+                                    <a [routerLink]="['/home']"> {{ 'header.Home' | translate }}</a>
                                 </li>
                                 <li>
-                                    <a [routerLink]="['/services','Services']">Services</a>
+                                    <a [routerLink]="['/services','Services']">{{ 'header.Services' | translate }}</a>
                                 </li>
                                 <li>
-                                    <a [routerLink]="['/services','Packs']">Packs</a>
+                                    <a [routerLink]="['/services','Packs']">{{ 'header.Packs' | translate }}</a>
                                 </li>
                                 <li>
-                                    <a [routerLink]="['/services','Team']">Team</a>
+                                    <a [routerLink]="['/services','Team']">{{ 'header.Team' | translate }}</a>
                                 </li>
 
 
                                 <li>
-                                    <a [routerLink]="['/contact']">Contact </a>
+                                    <a [routerLink]="['/contact']">{{ 'header.Contact' | translate }} </a>
                                 </li>
+                                <li class="dropdown">
+                                    <a href="#">{{ 'header.Language' | translate }} <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <!-- <li *ngFor="let lang of translate.getLangs()"><button (click)="cambiar(lang)">{{lang}}</button></li> -->
+                                        <li *ngFor="let lang of translate.getLangs()">
+                                            <a (click)="cambiar(lang)" class="btn btn-inverse">{{ lang}}</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <!-- <li>
+                                    <label>
+                                    {{ 'HOME.SELECT' | translate }}
+                                    <select #langSelect (change)="translate.use(langSelect.value)">
+                                      <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+                                    </select>
+                                  </label>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>

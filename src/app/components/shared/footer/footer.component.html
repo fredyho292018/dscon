@@ -1,10 +1,45 @@
 <div class="container">
     <div class="row">
+
         <div class="span4">
             <div class="widget">
-                <div class="footer_logo">
-                    <h3 style="text-align: center;"><a href="index.html"><i class="icon-tint"></i> {{contact.nombre}}</a></h3>
-                </div>
+                <h5 class="widgetheading">{{ 'footer.titulo1' | translate }}</h5>
+                <ul class="link-list">
+                    <li *ngFor="let pagina of paginas"><a href="#">{{ pagina | translate }}</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="span4">
+            <div class="widget">
+                <h5 class="widgetheading">{{ 'footer.titulo2' | translate }}</h5>
+                <ul class="link-list">
+                    <li *ngFor="let other of otherservices"><a href="#">{{ other | translate }}</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="span4">
+            <div class="widget">
+                <h5 class="widgetheading">{{ 'footer.titulo3' | translate }}</h5>
+                <ul class="link-list">
+
+                    <li *ngFor="let telefono of contact.telfonos"><span style="display: inline-block;
+                       
+                        color: #111;
+                        font-size: 32px;
+                         " class="font-icon-phone-sign"> {{ telefono }}</span>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- <div class="span4">
+            <div class="widget">
+                <h5 class="widgetheading"><a [routerLink]="['contact']">{{ 'footer.titulo3' | translate }}</a></h5>
                 <div class="span2">
                     <img [src]="contact.imagen">
                     <br>
@@ -17,27 +52,7 @@
                 </div>
 
             </div>
-        </div>
-        <div class="span4">
-            <div class="widget">
-                <h5 class="widgetheading">Browse pages</h5>
-                <ul class="link-list">
-                    <li *ngFor="let pagina of paginas"><a href="#">{{pagina}}</a></li>
-
-                </ul>
-
-            </div>
-        </div>
-        <div class="span4">
-            <div class="widget">
-                <h5 class="widgetheading">OTHER SERVICE</h5>
-                <ul class="link-list">
-                    <li *ngFor="let other of otherservices"><a href="#">{{other}}</a></li>
-
-                </ul>
-
-            </div>
-        </div>
+        </div> -->
 
     </div>
 </div>

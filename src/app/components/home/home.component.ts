@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServeconsergueService, ServeI } from 'src/app/services/serveconsergue.service';
 import { ActivatedRoute, Router } from '@angular/router';
+// import {TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   listaService: ServeI[] = [];
   listaPacks: ServeI[] = [];
+  // tslint:disable-next-line:max-line-length
   constructor(private _activatedRoute: ActivatedRoute, private _serveconsergueService: ServeconsergueService, private ro: Router) {
     this.listaService = this._serveconsergueService.getDsListaClasificacion('Services');
     console.log(this.listaService);

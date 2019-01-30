@@ -1,0 +1,49 @@
+{
+    "hola": "Hola mundo",
+    "header": {
+        "Home": "Inicio",
+        "Services": "Servicios",
+        "Packs": "Paquetes",
+        "Team": "Equipo",
+        "Contact": "Contactos",
+        "Remember": "Recuerda",
+        "Language": "Idioma"
+
+    },
+    "home": {
+        "Welcome to Remember": "Bienvenido a recordar",
+        "Personal Assistant in Mallorca": "Asistente Personal en Mallorca",
+        "Get Started": "Empezar",
+        "titulo1": "Servicio de Tiempo Libre de Concierge en Mallorca DS",
+        "titulo2": "Servicio de Tiempo Libre de Familia en Mallorca DS",
+        "titulo3": "Precio especial en tiempos muy <span>limitados</span>",
+        "titulo4": "Llamar a la Acción"
+    },
+    "footer": {
+        "titulo1": "Navegar por las páginas",
+        "titulo2": "Otro Servicio",
+        "titulo3": "Formulario de contacto"
+    },
+
+    "Personal Assistant in Mallorca": "Asistente Personal en Mallorca",
+    "Contact": "Contactos",
+    "Team": "Equipo",
+    "Services": "Servicio",
+    "Packs": "Paquetes",
+    "Privacy Policy": "Política de privacidad",
+    "Terms & Conditions": "Términos y condiciones",
+    "Cookies Policy": "Política de cookies",
+
+    "Maintenance Boat Services": "Servicios de mantenimiento de embarcaciones",
+    "Babysitter Services": "Servicios de niñera",
+    "Maintenance House Services": "Servicios de mantenimiento de la casa",
+    "Waiters Services": "Servicios de camareros",
+    "Catering Organization Services at Home and Boats": "Servicios de organización de catering en el hogar y barcos",
+    "Restaurant Services": "Servicios de restaurante",
+    "Relax & Spa Pack": "Paquete de relajación Spa",
+    "Sport Pack": "Paquete de deporte",
+    "Fun Pack": "Paquete de diversión",
+    "Sorry requested page not found": "Lo sentimos, la página solicitada no se encuentra",
+    "Please select the desired option in the menu": "Por favor seleccione en el menú la opción deseada"
+
+}

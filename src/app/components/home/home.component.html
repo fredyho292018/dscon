@@ -1,10 +1,11 @@
 <!-- section intro -->
 <section id="intro">
     <div class="intro-content">
-        <h2>Welcome to Remember!</h2>
-        <h3>Personal Assistant in Mallorca</h3>
+        <!-- <h2>Welcome to Remember!</h2> -->
+        <h2>{{ 'home.Welcome to Remember' | translate }}</h2>
+        <h3>{{ 'home.Personal Assistant in Mallorca' | translate }}</h3>
         <div>
-            <a href="#content" class="btn-get-started scrollto">Get Started</a>
+            <a href="#content" class="btn-get-started scrollto">{{ 'home.Get Started' | translate }}</a>
         </div>
     </div>
 </section>
@@ -12,7 +13,7 @@
 
 <section id="content">
     <div class="container">
-        <h2 style="text-align: center;">Mallorca DS Concierge Free Time Services</h2>
+        <h2 style="text-align: center;">{{ 'home.titulo1' | translate }}</h2>
         <div class="row">
             <div class="span12">
                 <div class="clearfix"></div>
@@ -59,7 +60,7 @@
 </section>
 <section id="content">
     <div class="container">
-        <h2 style="text-align: center;">Mallorca DS Concierge Family Services</h2>
+        <h2 style="text-align: center;">{{ 'home.titulo2' | translate }}</h2>
         <div class="row">
             <div class="span12">
                 <div class="clearfix"></div>
@@ -186,12 +187,13 @@
                     <div class="row">
                         <div class="span8">
                             <div class="cta-text">
-                                <h2>Special price in very <span>limited</span> times</h2>
+
+                                <h2 [innerHTML]="'home.titulo3' | translate"></h2>
                             </div>
                         </div>
                         <div class="span4">
                             <div class="cta-btn">
-                                <a href="#" class="btn btn-color">Call Action <i class="icon-caret-right"></i></a>
+                                <a href="#" class="btn btn-color">{{'home.titulo4' | translate }} <i class="icon-caret-right"></i></a>
                             </div>
                         </div>
 
